@@ -1,0 +1,103 @@
+/* App.css */
+
+/* Add any global styles here */
+
+:root {
+  background-color: #cce1f2;
+}
+
+/* Default styles for wrapper and other elements */
+.wrapper {
+  max-width: 600px;
+  width: 90%;
+  background-color: #f0f0f0;
+  border-radius: 70px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px 30px 25px;
+}
+
+.wrapper h2 {
+  font-family: "Poppins";
+}
+
+.quote {
+  text-align: center;
+  font-size: 25px;
+}
+
+.author {
+  text-align: right;
+  font-size: 18px;
+}
+
+.hed {
+  text-align: center;
+}
+
+.quote-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+/* Indicate that icons are clickable */
+.buttons ul li {
+  cursor: pointer;
+}
+
+.buttons ul {
+  gap: 30px;
+  display: flex;
+  list-style: none;
+}
+
+.copy {
+  width: 20px;
+  height: 25px;
+}
+.twitter{
+  width: 20px;
+  height: 25px;
+}
+.volume {
+  width: 20px;
+  height: 25px;
+}
+
+.left {
+  width: 20px;
+  object-fit: cover;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .wrapper {
+    border-radius: 30px;
+    padding: 20px;
+  }
+  
+  .quote {
+    font-size: 20px;
+  }
+  
+  .author {
+    font-size: 16px;
+  }
+  
+  .buttons .volume,
+  .buttons .copy,
+  .buttons .twitter {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .buttons ul {
+    gap: 20px;
+  }
+  
+  button {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
